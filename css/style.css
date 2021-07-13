@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
 /* Common Styles */
 * {
   margin: 0;
@@ -7,9 +8,23 @@
 }
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #f3f1ff;
 }
 .flex-container {
   display: flex;
+}
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.container {
+  background-color: #ffffff;
+  width: 870px;
+  padding: 33px;
+}
+hr {
+  border: 1px solid #d1d1d1;
 }
 
 /*---------------------
@@ -20,7 +35,7 @@ body {
   padding: 10px 0;
 }
 .navbar {
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .logo {
   align-items: center;
@@ -50,4 +65,33 @@ body {
 }
 .profile img {
   width: 80%;
+}
+
+/* ==================
+Top Player Area
+===================== */
+.top-players {
+  margin-bottom: 30px;
+}
+.section-title {
+  color: #562eff;
+  font-size: 24px;
+  margin-bottom: 33px;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 30px;
+}
+.player {
+  display: flex;
+  align-items: center;
+}
+.player img {
+  width: 56px;
+  height: 56px;
+}
+.player-name {
+  margin-left: 16px;
+  font-size: 18px;
 }
